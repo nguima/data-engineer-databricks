@@ -26,6 +26,12 @@
 
 # MAGIC %md
 # MAGIC 
+# MAGIC > spark-sql built in functions - https://spark.apache.org/docs/2.3.0/api/sql/index.html  
+
+# COMMAND ----------
+
+# MAGIC %md
+# MAGIC 
 # MAGIC ## 1. Ingest DataSet
 # MAGIC 
 # MAGIC dataset selected for analysis
@@ -249,6 +255,13 @@ spark.sql("CREATE TABLE tmp_business USING DELTA LOCATION '/mnt/prod-files/bronz
 # MAGIC %sql
 # MAGIC SELECT COUNT(*)
 # MAGIC FROM silver_business
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC SELECT *
+# MAGIC FROM silver_business
+# MAGIC LIMIT 10
 
 # COMMAND ----------
 
